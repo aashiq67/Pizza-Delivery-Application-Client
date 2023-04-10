@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    font-size: 18px;
+    /* background-color: #ffffff; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/connected.png"); */
+}
+
+h1, h2, h3{
+    font-family: 'Cabin', sans-serif;
+}
+
+p, h5, h6, span{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#box {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg-img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* opacity: 0.6; */
+    z-index: -1;
+}
+
+#content {
+    padding: 0% 15%;
+}
+
+#user-admin{
+    display: flex;
+    justify-content: space-between;
+}
+
+#user,
+#admin {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.content-h1 {
+    display: flex;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+.pizza {
+    font-size: 48px;
+    color: white;
+}
+
+.hub {
+    font-size: 48px;
+    border-radius: 5px;
+    padding: 0px 1px;
+    background-color: orange;
+    color: black;
+}
+
+#content p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.enter {
+    /* width: 50%; */
+    margin: 1.5rem 0;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+}
+
+.forms {
+    width: 50%;
+    margin: 3rem;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.6);
+}
+
+.form {
+    padding: 5% 5% 7%;
+}
+
+.forms-btn {
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 5%;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.user-cards-box {
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.admin-cards-box {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.user-grid-card {
+    padding: 5%;
+    text-align: center;
+}
+
+.admin-grid-card {
+    padding: 5%;
+    text-align: center;
+}
+
+.usercard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    height: 100%;
+}
+
+.admincard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    height: 90%;
+}
+
+.usercard-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.admincard-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-div {
+    width: 100%;
+    height: 70%;
+}
+
+.h5-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.icons {
+    color: red;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+.carousel-box {
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2%;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.custom-pizza-div {
+    width: 90vw;
+    position: fixed;
+    animation-name: anime;
+    animation-duration: 1s;
+    left: 4.5%;
+    bottom: 5%;
+}
+
+@keyframes anime {
+    0% {
+        bottom: -50%;
+    }
+
+    100% {
+        bottom: 5%;
+    }
+}
+
+.custom-pizza-box {
+    padding: 2%;
+    background-color: #ded6d6;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 1);
+}
+
+.custom-pizza-topins {
+    display: flex;
+}
+
+.custom-pizza-details {
+    width: 50%;
+    background-color: aliceblue;
+    margin: 1%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.custom-topins {
+    width: 50%;
+    background-color: aliceblue;
+    margin: 1%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.custom-pizza-bill {
+    width: 75%;
+    background-color: aliceblue;
+    margin: 1% auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.custom-pizza-details-box {
+    padding: 2%;
+}
+
+.custom-topins-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.custom-pizza-bill-box {
+    padding: 2%;
+}
+
+.custom-pizza-img {
+    float: left;
+    height: 40%;
+    margin-right: 3%;
+}
+
+.bill-table {}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.divider {
+    flex-grow: 1;
+    border-bottom: 3px dotted black;
+    margin: 5px
+}
+
+.box {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+}
+
+.adminbody {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.edit-icon {
+    position: absolute;
+    right: 5%;
+    color: black;
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    color: li;
+}
+
+.upload-img {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.update-img {
+    cursor: pointer;
+    /* position: relative; */
+    /* top: -70%; */
+    position: absolute;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.form-topins-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.add-pizza-form {}
+
+.admin-topins {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.c {
+    text-align: center;
+    padding: 2%;
+    border: 1px solid rgba(130, 202, 250);
+}
+
+.topins-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5% 0%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width:769px) {
+    .user-cards-box, .admin-cards-box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .adminbody {
+        grid-template-columns: 1fr;
+    }
+    #user-admin{
+        flex-direction: column;
+    }
+    #user,#admin{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    .custom-topins-box{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:426px) {
+    .user-cards-box, .admin-cards-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .carousel-content {
+        top: 17%;
+        left: 8%;
+    }
+    
+    .pizza{
+        font-size: 32px;
+    }
+    .hub{
+        font-size: 32px;
+    }
+    .admin-topins {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:321px) {
+    .user-cards-box, .admin-cards-box {
+        grid-template-columns: 1fr;
+    }
+    .pizza{
+        font-size: 32px;
+    }
+    .hub{
+        font-size: 32px;
+    }
+    .admin-topins {
+        grid-template-columns: 1fr;
+    }
+}
